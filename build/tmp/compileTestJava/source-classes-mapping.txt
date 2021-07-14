@@ -4,3 +4,7 @@ pages/HomePage.java
  pages.HomePage
 TradeMeTest.java
  TradeMeTest
+pages/ResultsPage.java
+ pages.ResultsPage
+steps/TradeMeSteps.java
+ steps.TradeMeSteps

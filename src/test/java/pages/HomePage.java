@@ -4,17 +4,21 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 
-public class HomePage extends AbstractPage {
+public class HomePage{
 
+    private WebDriver driver;
     private WebElement queryBox;
 
     public HomePage(WebDriver driver){
-        super(driver);
+        this.driver = driver;
         this.queryBox = driver.findElement(By.cssSelector("#searchString"));
+        PageFactory.initElements(driver, this);
     }
 
     public void searchInputQuery(String searchQuery){
+        this.queryBox = driver.findElement(By.cssSelector("#searchString"));
         queryBox.sendKeys(searchQuery);
     }
 

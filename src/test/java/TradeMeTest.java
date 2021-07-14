@@ -41,7 +41,7 @@ public class TradeMeTest {
     @Test
     public void testTradeMeReturnKey() throws Exception{
         homePage.searchInputQuery("gold");
-        ResultsPage resultsPage = homePage.searchReturnKey();
+        resultsPage = homePage.searchReturnKey();
         resultsPage.waitForFooter();
         printInfo();
     }
