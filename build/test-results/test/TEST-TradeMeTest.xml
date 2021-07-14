@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TradeMeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-14T03:04:07" hostname="ASY-WIN10-22" time="12.774">
+<testsuite name="TradeMeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-07-14T03:46:16" hostname="ASY-WIN10-22" time="14.744">
   <properties/>
-  <testcase name="testTradeMeReturnKey()" classname="TradeMeTest" time="12.774"/>
+  <testcase name="testTradeMeSubmitForm()" classname="TradeMeTest" time="14.744"/>
   <system-out><![CDATA[--------------------
-Number of listings: 26
-Current price of top item: Price by negotiation
+Number of listings: 27
+Current price of top item: For sale by tender
 Top 10 Listing Titles:
-1. This is First Home Gold
-2. Cardrona Gold
+1. AMDEX FP-RCA-GR Green RCA to RCA Jack. Gold Plated
+2. This is First Home Gold
 3. Cardrona Gold
 4. Cardrona Gold
 5. Cardrona Gold
 6. Cardrona Gold
 7. Cardrona Gold
-8. Freehold gold in Whangarei
-9. Albany Retail Gold
-10. Porana Road Gold
+8. Cardrona Gold
+9. Freehold gold in Whangarei
+10. Albany Retail Gold
 The 3 lowest price buy now items:
-1. RNZAF 50th Anniversary A-4K Skyhawk, $1.00
-2. 3x Assorted Asian Styled Waitress Uniforms Dresses, $1.00
-3. Albany Retail Gold, $38,199
+1. AMDEX FP-RCA-GR Green RCA to RCA Jack. Gold Plated, $1.00
+2. RNZAF 50th Anniversary A-4K Skyhawk, $1.00
+3. 3x Assorted Asian Styled Waitress Uniforms Dresses, $38,199
 --------------------
 ]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 34389
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 31630
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 14, 2021 3:04:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 14, 2021 3:46:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

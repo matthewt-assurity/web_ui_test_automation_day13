@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.HomePage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class TradeMeTest {
 
     private WebDriver driver;
+    private HomePage homePage;
 
     @BeforeAll
     private static void setupClass() {
@@ -27,6 +29,7 @@ public class TradeMeTest {
     private void setupBrowser() {
         driver = new ChromeDriver();
         driver.get("https://www.tmsandbox.co.nz/");
+        homePage = new HomePage(driver);
     }
 
     @AfterEach
@@ -47,7 +50,7 @@ public class TradeMeTest {
 
     @Test
     public void testTradeMeSubmitForm() throws Exception{
-        typeGoldInSearch();
+        homePage.search("gold");
         driver.findElement(By.cssSelector("#generalSearch")).submit();
         waitForFooter();
         printInfo();
@@ -55,7 +58,7 @@ public class TradeMeTest {
 
     @Test
     public void testTradeMeClickSearchButton() throws Exception{
-        typeGoldInSearch();
+        homePage.search("gold");
         driver.findElement(By.cssSelector("#generalSearch > div.field.field-right > button")).click();
         waitForFooter();
         printInfo();
