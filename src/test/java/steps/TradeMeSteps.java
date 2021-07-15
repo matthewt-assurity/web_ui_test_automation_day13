@@ -29,7 +29,7 @@ public class TradeMeSteps {
             options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
         }
         chromeDriver = new ChromeDriver(options);
-//        chromeDriver.get("https://www.tmsandbox.co.nz/");
+        chromeDriver.get("https://www.tmsandbox.co.nz/");
         homePage = new HomePage(chromeDriver);
     }
 
